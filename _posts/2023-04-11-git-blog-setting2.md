@@ -30,6 +30,7 @@ GIT 블로그의 Chirpy 테마 적용을 위해 힘들게 노력한 나의 방�
 1. <a href="https://git-scm.com/downloads">git 설치</a>-Standalone Installer   
 2. 개인용 GitHub 계정 생성해두기   
 3. <a href="https://rubyinstaller.org/downloads/">Ruby 설치</a>-with DevKit   
+
 ---
 ## Git Hub Repository 생성 및 Clone 하기   
 1.GitHub에 접속하여, <kbd>gitHub계정명.github.io</kbd>으로 Repository를 생성해준다.   
@@ -62,13 +63,15 @@ Git Blog의 테마는 대부분 <a href="http://jekyllthemes.org/">http://jekyll
 
 Chirpy Git 주소 : <a href="https://github.com/cotes2020/jekyll-theme-chirpy/">https://github.com/cotes2020/jekyll-theme-chirpy/</a>
 
-2.접속 후, 아래와 같이 Release에 들어간다.
+2.접속 후, 아래와 같이 Release에 들어간다.  
+
 ![image](https://user-images.githubusercontent.com/56392513/230857560-1a314994-2735-4310-9a1c-84966142c635.png)
 
-가장 최신 버전이 아닌, 아래 버전으로 다운받는다.
+가장 최신 버전이 아닌, 아래 버전으로 다운받는다.  
+
 ![image](https://user-images.githubusercontent.com/56392513/230857825-2eb240b6-0a30-45db-9b76-f84889a4c57c.png)
 
-3.다운받은 파일을 압축 해제하여, Clone한 폴더에 붙여넣는다.
+3.다운받은 파일을 압축 해제하여, Clone한 폴더에 붙여넣는다.  
 
 ---
 
@@ -84,11 +87,11 @@ Mac에서는 해당 테마가 편리하게 세팅 가능하며, 구글링을 통
 ![image](https://user-images.githubusercontent.com/56392513/230860441-dfdd5c08-fb70-4c46-b41b-e4df74541770.png)
 
 2.아래의 파일들을 확인하여 삭제 및 세팅해준다.
-> Gemfile.lock 삭제
-> .travis 삭제
-> _posts 아래의 .md 파일들 삭제
-> .github/workflows/pages-deploy.yml.hook 파일만 남기고 다 삭제
-> .github/workflows/pages-deploy.yml.hook 이름변경을 통해 .hook 지우기
+> Gemfile.lock 삭제  
+> .travis 삭제  
+> _posts 아래의 .md 파일들 삭제  
+> .github/workflows/pages-deploy.yml.hook 파일만 남기고 다 삭제  
+> .github/workflows/pages-deploy.yml.hook 이름변경을 통해 .hook 지우기  
 
 3..gitignore 파일이 아래와 같은지 확인   
 
