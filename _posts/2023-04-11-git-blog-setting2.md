@@ -21,29 +21,31 @@ git 계정을 2개 사용하기 위해 세팅한 내용들을 잘 정리해두�
 
 GIT 블로그의 Chirpy 테마 적용을 위해 힘들게 노력한 나의 방법들을 공유하려고 한다.
 
-이 글을 보고 따라하는 분들은 쉽게 Chirpy 테마를 적용했으면 좋겠다😂
+이 글을 보고 따라하는 분들은 쉽게 Chirpy 테마를 적용했으면 좋겠다😂   
 
 ---
 
-## 기본 준비 할 것
-> OS : Window 10
-1. <a href="https://git-scm.com/downloads">git 설치</a>-Standalone Installer
-2. 개인용 GitHub 계정 생성해두기
-3. <a href="https://rubyinstaller.org/downloads/">Ruby 설치</a>-with DevKit
+## 기본 준비 할 것   
+> OS : Window 10   
+1. <a href="https://git-scm.com/downloads">git 설치</a>-Standalone Installer   
+2. 개인용 GitHub 계정 생성해두기   
+3. <a href="https://rubyinstaller.org/downloads/">Ruby 설치</a>-with DevKit   
 ---
-## Git Hub Repository 생성 및 Clone 하기
-1.GitHub에 접속하여, <kbd>gitHub계정명.github.io</kbd>으로 Repository를 생성해준다.
+## Git Hub Repository 생성 및 Clone 하기   
+1.GitHub에 접속하여, <kbd>gitHub계정명.github.io</kbd>으로 Repository를 생성해준다.   
 2.생성한 Repository를 Clone하기
   > 사용하는 컴퓨터에서 GIT 계정이 2개 이상인 경우
-  >
+  >   
+
   ```console
   git clone git@github.com-userA:userA/userA.github.io.git
 
   git config user.name 사용할 git계정명
   git config user.email git계정 이메일
-  ```
-  > 그냥 일반적인 Clone
-  >
+  ```   
+  > 그냥 일반적인 Clone   
+  >   
+
   ```console
   git clone https://github.com/userA/userA.github.io.git
   ```
@@ -88,7 +90,8 @@ Mac에서는 해당 테마가 편리하게 세팅 가능하며, 구글링을 통
 > .github/workflows/pages-deploy.yml.hook 파일만 남기고 다 삭제
 > .github/workflows/pages-deploy.yml.hook 이름변경을 통해 .hook 지우기
 
-3..gitignore 파일이 아래와 같은지 확인
+3..gitignore 파일이 아래와 같은지 확인   
+
 ```console
 # hidden files
 .*
@@ -111,7 +114,8 @@ package-lock.json
 ```
 
 4..github/workflows/pages-deploy.yml 에서 ruby-version 변경
-> 본인이 다운받은 ruby 버전으로 해준다. 나는 3.2.2로 변경하였다.
+> 본인이 다운받은 ruby 버전으로 해준다. 나는 3.2.2로 변경하였다.   
+
 ```yml
 name: 'Automatic build'
 on:
@@ -145,14 +149,17 @@ jobs:
 
 ```
 
-5._config.yml 에서 url 변경
+5._config.yml 에서 url 변경   
+
 ```console
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: 'https://userA.github.io/'
 
 ```
+
 6.ruby command 창 실행 후 아래 명령어 입력(관리자 권한으로 실행 권장)
+
 ```console
 cd 본인이 clone 받은 위치
 
@@ -164,6 +171,7 @@ jekyll serve
 
 7.<kbd>localhost:4000</kbd>을 통해 사이트가 뜨는지 확인
 8.확인 후, 정상적으로 출력이 되면 아래 명령어를 통해 본인 repository에 커밋
+
 ```console
 #변경된 파일을 모두 스테이징.
 git add -A
