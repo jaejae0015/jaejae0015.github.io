@@ -4,7 +4,7 @@ author:
   name: jaejae0015
   link: https://github.com/jaejae0015
 date: 2025-01-02
-categories: [jaejae0015, Record]
+categories: [Developer, JECKJECK]
 math: true
 mermaid: true
 render_with_liquid: false
