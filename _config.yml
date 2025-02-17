@@ -23,7 +23,7 @@ timezone: Asia/Seoul
 
 title: 쟤쟤의 GIT Blog                          # the main title
 
-tagline: 서사원의 개발 블로그:)   # it will display as the sub-title
+tagline: 서대리의 개발 블로그:)   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   A minimal, responsive, and powerful Jekyll theme for presenting professional writing.
